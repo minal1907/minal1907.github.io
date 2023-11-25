@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        var x = 0;
+        var y = 0;
+        var z = 0;
+        function mybutton1() {
+            if (x == 0) {
+                document.getElementById("img1").src = "1ir.jpg";
+                x = 1;
+            } else {
+                document.getElementById("img1").src = "1i.png";
+                x = 0;
+            }
+            
+        }
+        function mybutton2() {
+            if (y == 0) {
+                document.getElementById("img2").src = "2ir.gif";
+                y = 1;
+            } else {
+                document.getElementById("img2").src = "2i.png";
+                y = 0;
+            }
+ 
+        }
+        function mybutton3() {
+            if (z == 0) {
+                document.getElementById("img3").src = "3ir.png";
+                z = 1;
+            } else {
+                document.getElementById("img3").src = "3i.png";
+                z = 0;
+            }
+            document.getElementById("img3").src = "3ir.png";
+        }
+    </script>
+</head>
+<body style="background-color:#EAFAF1">
+    <div class="container">
+        <div class="card1">
+            <div id="inside" class="inside">
+                <img id="img1" src="1i.png"/>
+            </div>
+            <p class="para"><br><button type="button" onclick="mybutton1()">Flip</button></p>
+    
+        </div>
+        <div class="card2">
+            <div class="inside">
+                <img id="img2" src="2i.png"/>
+            </div>
+            <p><br><button type="button" onclick="mybutton2()">Flip</button></p>
+        </div>
+        <div class="card3">
+            <div class="inside">
+                <img id="img3" src="3i.png"/>
+            </div>
+            <p><br><button type="button" onclick="mybutton3()">Flip</button></p>
+        </div>
+    </div>
+</body>
+</html>

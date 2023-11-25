@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="text/javascript">
+
+        var password = "please";
+        var success = 0;
+        var s = 0;
+        function enterpw(){
+            password = "please";
+            var x = prompt("Enter in the password "," ");
+            if (x.toLowerCase() == password) {
+                alert("Come right in \n \n You've entered the right password");
+                window.location = "index.html";
+                success = 1;
+                return success;
+            } else {
+                alert("Wrong password!");
+                success = 0;
+                return success;
+            }
+        }
+        while (s == 0){
+            s = enterpw();
+        }
+        </script>
+    </head>
+    </html>
